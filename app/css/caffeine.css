@@ -1,0 +1,159 @@
+body {
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 3px 3px 5px rgba(0,0,0,.25);
+	margin-bottom: 0;
+}
+
+.reel, .reel li {
+	box-sizing: border-box;
+}
+
+#status {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	width: auto;
+	height: 50px;
+}
+#status h2 {
+	color: #fff;
+	display: none;
+	font-size: 25px;
+	padding: 5px 0px;
+	margin: 0;
+	text-shadow: 3px 3px 5px rgba(0,0,0,.25);
+}
+.machine {
+	border-radius: 5px;
+	background: #fff;
+	position: relative;
+	margin: 0 auto;
+	width: 600px;
+	overflow: hidden;
+	height: 150px;
+	border: 10px solid #603311;
+}
+.reel {
+	position: relative;
+	width: 33.3333333%;
+	display: block;
+	float: left;
+	height: 600px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	top: -450px;
+}
+.reel li {
+	text-indent: -9999em;
+	height: 150px;
+}
+
+.button {
+	font-family: 'Lobster', cursive;
+	display: block;
+	width: 100px;
+	margin: 20px auto;
+	padding: 5px 20px 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+	border-radius: 30px;
+	z-index: 5;
+}
+button:disabled {
+	color: #ccc;
+	background: #aaa;
+}
+
+.coffee-maker, .espresso-machine, .teapot, 
+.coffee-filter, .espresso-tamper, .tea-strainer, 
+.coffee-grounds, .espresso-grounds, .loose-tea {
+	-webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.coffee-maker {
+	background: url("../images/1-coffee-maker.jpg") no-repeat center center;
+	/*background: linear-gradient(
+      rgba(255, 0, 0, 0.25), 
+      rgba(255, 0, 0, 0.25)
+    ), url("../images/1-coffee-maker.jpg") no-repeat center center;*/
+	
+}
+.espresso-machine {
+	background: url("../images/1-espresso-machine.jpg") no-repeat center center;
+}
+.teapot {
+	background: url("../images/1-teapot.jpg") no-repeat center center;
+}
+
+.coffee-filter {
+	background: url("../images/2-coffee-filter.jpg") no-repeat center center;
+}
+.espresso-tamper {
+	background: url("../images/2-espresso-tamper.jpg") no-repeat center center;
+}
+.tea-strainer {
+	background: url("../images/2-tea-strainer.jpg") no-repeat center center;
+}
+
+.coffee-grounds {
+	background: url("../images/3-coffee-grounds.jpg") no-repeat center center;
+}
+.espresso-grounds {
+	background: url("../images/3-espresso-grounds.jpg") no-repeat center center;
+}
+.tea-loose {
+	background: url("../images/3-tea-loose.jpg") no-repeat center center;
+}
+
+
+.win-espresso, .win-tea, .win-coffee {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+}
+
+.win-espresso {
+	background: url("../images/win-espresso.png") center bottom no-repeat;
+	height: 250px;
+	width: 500px;
+	margin: 0 auto;
+}
+.win-tea {
+	background: url("../images/win-tea.png") center bottom no-repeat;
+	height: 250px;
+	width: 500px;
+	margin: 0 auto;
+	display: none
+}
+.win-coffee {
+	background: url("../images/win-coffee.png") center bottom no-repeat;
+	height: 250px;
+	width: 500px;
+	margin: 0 auto;
+}
+#soundcloud-embed {
+	display: none;
+}

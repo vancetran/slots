@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/vancetran/starter",
+  "authors": [
+    "Vance Tran <v@vancetran.com>"
+  ],
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "html5-boilerplate": "~4.3.0"
+  }
+}
