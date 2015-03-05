@@ -1,7 +1,7 @@
 var CaffeineMachine = CaffeineMachine || {};
 
 CaffeineMachine = function() {
-	var beverages, 
+	var beverages,
 			payLine,
 			spinLoops,
 			payLinePositions,
@@ -19,8 +19,8 @@ CaffeineMachine = function() {
 		beverages = ["coffee", "tea", "espresso"];
 
 		reel = [
-			["coffee-maker", "teapot", "espresso-machine"], 
-			["coffee-filter","tea-strainer","espresso-tamper"], 
+			["coffee-maker", "teapot", "espresso-machine"],
+			["coffee-filter","tea-strainer","espresso-tamper"],
 			["coffee-grounds","tea-loose","espresso-grounds"]
 		];
 
@@ -41,9 +41,9 @@ CaffeineMachine = function() {
 
 	function populateReels(){
 
-		for(i=0; i<3; i++){
+		for(var i=0; i<3; i++){
 
-			for(j=0; j<3; j++){
+			for(var j=0; j<3; j++){
 				$("#reel"+i).append("<li class="+reel[i][j]+">"+ reel[i][j] +"</li>");
 			}
 
@@ -62,13 +62,13 @@ CaffeineMachine = function() {
 		payLine = [];
 		payLinePositions = [];
 
-		for(i=0; i<3; i++){
+		for(var i=0; i<3; i++){
 			payLine.push(getRandomInt(0,3));
 		}
 
 
-		payLinePositions = payLine.map(function(el) { 
-			return -el*150; 
+		payLinePositions = payLine.map(function(el) {
+			return -el*150;
 		});
 
 		//console.log("Payline array: " + payLine);
@@ -91,7 +91,7 @@ CaffeineMachine = function() {
 		if(firstReel === 2)
 			item = "espresso";
 
-		for(i=0; i<=3; i++){
+		for(var i=0; i<=3; i++){
 			if(firstReel === array[i]){
 				match++;
 			}
@@ -107,7 +107,7 @@ CaffeineMachine = function() {
 	}
 
 	function displayStatus(item){
-		
+
 
 		$("#status h2").delay( 3500 ).fadeIn();
 		if(winner){
@@ -125,7 +125,7 @@ CaffeineMachine = function() {
 
 	function animateReels(){
 
-		for(i=0; i<spinLoops; i++){
+		for(var i=0; i<spinLoops; i++){
 
 			$("#reel0").animate({
 				top: "0px"
@@ -142,8 +142,8 @@ CaffeineMachine = function() {
 		});
 
 
-		
-		for(i=0; i<spinLoops*2; i++){
+
+		for(var i=0; i<spinLoops*2; i++){
 			$("#reel1").animate({
 				top: "0px"
 			},spinSpeed, 'linear', function() {
@@ -158,7 +158,7 @@ CaffeineMachine = function() {
 		});
 
 
-		for(i=0; i<spinLoops*3; i++){
+		for(var i=0; i<spinLoops*3; i++){
 
 			$("#reel2").animate({
 				top: "0px"
@@ -172,7 +172,7 @@ CaffeineMachine = function() {
 			top: payLinePositions[2]
 		},spinSpeed*2, 'easeOutElastic', function() {
 		});
-		
+
 	}
 
 	// Public Interface
