@@ -12,7 +12,8 @@
 * Refactor in Backbone?
 * Proper callback usage - don't rely on timers
 * Design improved UI/UX
-* Use Web Audio API for sound effects, ambient audio
+* Use Web Audio API for sound effects
+* Should use local file for ambient loop, but node static server not loading MP3
 
 ## Secondary
 
@@ -27,5 +28,6 @@
 
 ## Done
 
+* HTML5 Audio ambient loop
 * Fix errors/cruft
   * fix global iterators

@@ -82,8 +82,8 @@ button:disabled {
 	background: #aaa;
 }
 
-.coffee-maker, .espresso-machine, .teapot, 
-.coffee-filter, .espresso-tamper, .tea-strainer, 
+.coffee-maker, .espresso-machine, .teapot,
+.coffee-filter, .espresso-tamper, .tea-strainer,
 .coffee-grounds, .espresso-grounds, .loose-tea {
 	-webkit-background-size: contain;
   -moz-background-size: contain;
@@ -94,10 +94,10 @@ button:disabled {
 .coffee-maker {
 	background: url("../images/1-coffee-maker.jpg") no-repeat center center;
 	/*background: linear-gradient(
-      rgba(255, 0, 0, 0.25), 
+      rgba(255, 0, 0, 0.25),
       rgba(255, 0, 0, 0.25)
     ), url("../images/1-coffee-maker.jpg") no-repeat center center;*/
-	
+
 }
 .espresso-machine {
 	background: url("../images/1-espresso-machine.jpg") no-repeat center center;
@@ -154,6 +154,7 @@ button:disabled {
 	width: 500px;
 	margin: 0 auto;
 }
-#soundcloud-embed {
+
+#audio_1 {
 	display: none;
 }
