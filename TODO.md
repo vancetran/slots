@@ -2,6 +2,7 @@
 
 ## Primary
 
+* Mute button for ambient audio (plus all audio?)
 * Cleanup
   * That awful font
 * Fix errors/cruft
