@@ -17,7 +17,7 @@
 
 ## Secondary
 
-* More satisfying win conditions
+* More satisfying win conditions, better payoff. Confetti, of coffee? Make it rain espresso beans?
 * Weighted values - fully random is not fun
 * Adjust spin rates to increase anticipation/tension
 
