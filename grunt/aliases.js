@@ -24,5 +24,11 @@ module.exports = {
 	],
 	dev: [
 		'watch'
+	],
+	build: [
+		'default'
+	],
+	publish: [
+		'gh-pages'
 	]
 };
