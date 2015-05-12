@@ -1,6 +1,6 @@
 var CaffeineMachine = CaffeineMachine || {};
 
-CaffeineMachine = function() {
+CaffeineMachine = (function() {
 	var beverages,
 			payLine,
 			spinLoops,
@@ -14,7 +14,6 @@ CaffeineMachine = function() {
 		btnDisableSeconds = 3.5;
 		spinLoops = 4;
 		spinSpeed = 250;
-
 
 		beverages = ["coffee", "tea", "espresso"];
 
@@ -136,6 +135,7 @@ CaffeineMachine = function() {
 
 			});
 		}
+
 		$("#reel0").animate({
 			top: payLinePositions[0]
 		},spinSpeed*2, 'easeOutElastic', function() {
@@ -143,7 +143,7 @@ CaffeineMachine = function() {
 
 
 
-		for(var i=0; i<spinLoops*2; i++){
+		for(var j=0; j<spinLoops*2; j++){
 			$("#reel1").animate({
 				top: "0px"
 			},spinSpeed, 'linear', function() {
@@ -158,7 +158,7 @@ CaffeineMachine = function() {
 		});
 
 
-		for(var i=0; i<spinLoops*3; i++){
+		for(var k=0; k<spinLoops*3; k++){
 
 			$("#reel2").animate({
 				top: "0px"
@@ -180,6 +180,6 @@ CaffeineMachine = function() {
 		init: init
 	};
 
-}();
+}());
 
 CaffeineMachine.init();
