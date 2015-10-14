@@ -1,9 +1,9 @@
 Slots
 =====
 
-A simple slot machine.
+A simple slot machine. [Check out the working demo here](vancetran.github.io/slots).
 
-## Installation
+## Dev Installation
 
 Make sure your system has [Node.js](http://nodejs.org/), [Git](http://git-scm.com/), and [Bower](http://bower.io/) installed.
 
