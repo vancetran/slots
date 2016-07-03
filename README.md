@@ -1,7 +1,7 @@
 Slots
 =====
 
-A simple slot machine. [Check out the working demo here](vancetran.github.io/slots).
+A simple slot machine. [Check out the working demo here](http://vancetran.github.io/slots).
 
 ## Dev Installation
 
